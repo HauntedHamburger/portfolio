@@ -322,8 +322,13 @@ nav {
   text-align: center;
   width: 45%;
   gap: 1rem;
-  border: 1px solid hsl( var(--clr-neutral) / 0.05 );
-  box-shadow: 0 5px 15px hsla( var(--clr-neutral) / 0.05);
+  border: 1px solid hsl( var(--clr-neutral) / 0.15 )
+}
+
+.project:hover,
+.project:focus {
+  transform: scale(1.05);
+  transition: 200ms ease;
 }
 
 .project-content {
@@ -347,17 +352,13 @@ nav {
   padding-bottom: 2rem;
 }
 
-.contact p::before {
-  content: "";
-  position: relative;
-  width: 30rem;
-  height: 4px;
-  background-color: hsla(var(--clr-accent));
-}
-
 .contact h2,
 .contact p {
   text-align: center;
+}
+
+.contact p {
+  padding: 0 2rem;
 }
 
 .contact .icon-container {
