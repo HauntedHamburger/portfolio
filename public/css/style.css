@@ -381,21 +381,32 @@ nav {
   gap: 0.5rem;
 }
 
-.form-row label {
+.form-row label,
+.form-row input,
+.form-row textarea {
   width: 100%;
 }
 
 .form-row input {
-  width: 100%;
   height: 2rem;
+  padding: 1.5rem 1rem;
   border: 1px solid hsl( var(--clr-dark) / 0.5 );
 }
 
+.form-row input:hover,
+.form-row input:focus,
+.form-row textarea:hover,
+.form-row textarea:focus {
+  outline: 2px solid hsla( var(--clr-accent))
+}
+
 .form-row textarea {
-  width: 100%;
   height: 10rem;
   border: 1px solid hsl( var(--clr-dark) / 0.5 );
+  padding: 1rem;
 }
+
+
 
 
 
@@ -407,12 +418,17 @@ nav {
 /* ---- Footer ----- */
 
 .footer-container {
-  padding: clamp(4rem, 6rem, 10vw);
-  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
   background: rgb(10, 22, 41);
   background: linear-gradient(90deg, rgba(32, 38, 47) 75%, rgba(32, 38, 47) 100%);
 }
 
+.footer-container span {
+  color: hsla(var(--clr-white) / 0.75);
+}
 
 
 /* Global Styling */
